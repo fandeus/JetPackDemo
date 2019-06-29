@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">JetPackDemo</string>
+    
+    <string name="app_menu_nav_garden">我的花园</string>
+    <string name="app_menu_nav_nature">大自然的花园</string>
 </resources>
