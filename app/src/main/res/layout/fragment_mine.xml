@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_main"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/item_garden_planting"
+                android:layout_height="match_parent"/>
+        
+        <TextView
+                android:id="@+id/text_view_empty_view"
+                android:layout_width="wrap_content"
+                tools:text="@string/app_empty_string"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:drawableTop="@drawable/image_empty"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"/>
+    
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

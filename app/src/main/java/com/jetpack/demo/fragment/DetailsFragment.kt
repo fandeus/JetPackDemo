@@ -3,9 +3,11 @@ package com.jetpack.demo.fragment
 import androidx.fragment.app.Fragment
 
 /**
- * 我的花园
+ * 植物详情
  */
 
-class MineGarden : Fragment() {
+class DetailsFragment : Fragment() {
+
+
 
 }
