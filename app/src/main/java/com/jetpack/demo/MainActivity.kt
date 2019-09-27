@@ -1,9 +1,8 @@
 package com.jetpack.demo
 
-import android.graphics.drawable.GradientDrawable
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -14,6 +13,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.jetpack.demo.databinding.ActivityMainBinding
+import com.jetpack.demo.vviewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.navigationViewLeft.setupWithNavController(navController)
+
+        binding.floatBar.setOnClickListener {
+            startActivity(Intent(this, ViewModelActivity::class.java))
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
